@@ -15,3 +15,34 @@ html,
 body {
   height: 100%;
 }
+
+.circle-bg {
+  width: 200px;
+  height: 200px;
+  border-style: dashed;
+  border-color: $blue;
+  border-radius: 50%;
+
+  position: relative;
+  left: 20%;
+  top: 20%;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.2s;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.circle {
+  width: 15%;
+  height: 15%;
+  background: $blue;
+  border-radius: 50%;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
