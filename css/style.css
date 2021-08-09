@@ -15,87 +15,87 @@ body {
 }
 
 .circle-bg:nth-child(1) {
-  border-color: #feee7d;
-  left: 14%;
-  top: 75%;
+  border-color: #ef5285;
+  left: 56%;
+  top: 39%;
 }
 
 .c1 {
-  width: 21%;
-  height: 21%;
-  background: #feee7d;
+  width: 47%;
+  height: 47%;
+  background: #ef5285;
 }
 
 .circle-bg:nth-child(2) {
-  border-color: #feee7d;
-  left: 58%;
-  top: 34%;
+  border-color: #ef5285;
+  left: 27%;
+  top: 25%;
 }
 
 .c2 {
-  width: 30%;
-  height: 30%;
-  background: #feee7d;
+  width: 20%;
+  height: 20%;
+  background: #ef5285;
 }
 
 .circle-bg:nth-child(3) {
-  border-color: #60c5ba;
-  left: 51%;
-  top: 65%;
+  border-color: #a5dff9;
+  left: 71%;
+  top: 24%;
 }
 
 .c3 {
-  width: 46%;
-  height: 46%;
-  background: #60c5ba;
+  width: 31%;
+  height: 31%;
+  background: #a5dff9;
 }
 
 .circle-bg:nth-child(4) {
-  border-color: #feee7d;
-  left: 34%;
-  top: 17%;
+  border-color: #60c5ba;
+  left: 45%;
+  top: 49%;
 }
 
 .c4 {
-  width: 44%;
-  height: 44%;
-  background: #feee7d;
-}
-
-.circle-bg:nth-child(5) {
-  border-color: #a5dff9;
-  left: 67%;
-  top: 12%;
-}
-
-.c5 {
-  width: 16%;
-  height: 16%;
-  background: #a5dff9;
-}
-
-.circle-bg:nth-child(6) {
-  border-color: #60c5ba;
-  left: 24%;
-  top: 53%;
-}
-
-.c6 {
-  width: 12%;
-  height: 12%;
+  width: 17%;
+  height: 17%;
   background: #60c5ba;
 }
 
+.circle-bg:nth-child(5) {
+  border-color: #60c5ba;
+  left: 52%;
+  top: 54%;
+}
+
+.c5 {
+  width: 24%;
+  height: 24%;
+  background: #60c5ba;
+}
+
+.circle-bg:nth-child(6) {
+  border-color: #feee7d;
+  left: 28%;
+  top: 47%;
+}
+
+.c6 {
+  width: 50%;
+  height: 50%;
+  background: #feee7d;
+}
+
 .circle-bg:nth-child(7) {
-  border-color: #a5dff9;
-  left: 83%;
-  top: 18%;
+  border-color: #feee7d;
+  left: 67%;
+  top: 21%;
 }
 
 .c7 {
-  width: 30%;
-  height: 30%;
-  background: #a5dff9;
+  width: 27%;
+  height: 27%;
+  background: #feee7d;
 }
 
 .circle-bg {
