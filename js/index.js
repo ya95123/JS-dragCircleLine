@@ -8,16 +8,18 @@ circleBgs.forEach((item, idx) => {
   item.addEventListener("mousedown", (e) => {
     e.preventDefault()
 
-    // 紀錄 dom 中心 X 座標 (offetLeft 是與父元素的左側距離)
+    // *紀錄 dom 中心 X 座標 (offetLeft 是與父元素的左側距離)
     let circleBgCenter = item.offsetLeft + (item.offsetWidth / 2)
-    console.log(circleBgCenter)
+    // console.log(circleBgCenter)
 
     // circle 大小改變，加上絕對值！
     const moveCircle = (e) => {
-      // e.pageX　為滑鼠 X 座標
+      // *e.pageX　為滑鼠 X 座標
       let percent = Math.abs(e.pageX - circleBgCenter)
+      // console.log(e.pageX)
+      // console.log(circleBgCenter)
       console.log(percent)
-      // 更改 circle 寬高 %
+      // *更改 circle 寬高 %
       circles[idx].setAttribute("style", `width:${percent}%; height:${percent}%;`)
     }
 
