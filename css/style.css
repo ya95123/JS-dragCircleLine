@@ -34,7 +34,9 @@ body {
 
 .circle {
   width: 15%;
+  max-width: 100%;
   height: 15%;
+  max-height: 100%;
   background: #a5dff9;
   border-radius: 50%;
   position: absolute;
