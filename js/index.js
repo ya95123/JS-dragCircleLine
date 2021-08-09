@@ -12,7 +12,7 @@ circleBgs.forEach((item, idx) => {
     let circleBgCenter = item.offsetLeft + (item.offsetWidth / 2)
     // console.log(circleBgCenter)
 
-    // circle 大小改變，加上絕對值！
+    // *circle 大小改變，加上絕對值！
     const moveCircle = (e) => {
       // *e.pageX　為滑鼠 X 座標
       let percent = Math.abs(e.pageX - circleBgCenter)
