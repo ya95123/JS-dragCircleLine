@@ -15,97 +15,98 @@ body {
 }
 
 .circle-bg:nth-child(1) {
-  border-color: #ef5285;
-  left: 56%;
-  top: 39%;
+  border-color: #60c5ba;
+  left: 85%;
+  top: 40%;
 }
 
 .c1 {
-  width: 47%;
-  height: 47%;
-  background: #ef5285;
+  width: 46%;
+  height: 46%;
+  background: #60c5ba;
 }
 
 .circle-bg:nth-child(2) {
-  border-color: #ef5285;
-  left: 27%;
-  top: 25%;
+  border-color: #a5dff9;
+  left: 34%;
+  top: 53%;
 }
 
 .c2 {
-  width: 20%;
-  height: 20%;
-  background: #ef5285;
+  width: 21%;
+  height: 21%;
+  background: #a5dff9;
 }
 
 .circle-bg:nth-child(3) {
   border-color: #a5dff9;
-  left: 71%;
-  top: 24%;
+  left: 45%;
+  top: 12%;
 }
 
 .c3 {
-  width: 31%;
-  height: 31%;
+  width: 50%;
+  height: 50%;
   background: #a5dff9;
 }
 
 .circle-bg:nth-child(4) {
-  border-color: #60c5ba;
-  left: 45%;
-  top: 49%;
+  border-color: #ef5285;
+  left: 65%;
+  top: 35%;
 }
 
 .c4 {
-  width: 17%;
-  height: 17%;
-  background: #60c5ba;
+  width: 41%;
+  height: 41%;
+  background: #ef5285;
 }
 
 .circle-bg:nth-child(5) {
-  border-color: #60c5ba;
-  left: 52%;
-  top: 54%;
+  border-color: #feee7d;
+  left: 32%;
+  top: 69%;
 }
 
 .c5 {
-  width: 24%;
-  height: 24%;
-  background: #60c5ba;
+  width: 43%;
+  height: 43%;
+  background: #feee7d;
 }
 
 .circle-bg:nth-child(6) {
-  border-color: #feee7d;
-  left: 28%;
-  top: 47%;
+  border-color: #a5dff9;
+  left: 9%;
+  top: 16%;
 }
 
 .c6 {
-  width: 50%;
-  height: 50%;
-  background: #feee7d;
+  width: 30%;
+  height: 30%;
+  background: #a5dff9;
 }
 
 .circle-bg:nth-child(7) {
   border-color: #feee7d;
-  left: 67%;
-  top: 21%;
+  left: 84%;
+  top: 48%;
 }
 
 .c7 {
-  width: 27%;
-  height: 27%;
+  width: 38%;
+  height: 38%;
   background: #feee7d;
 }
 
 .circle-bg {
   width: 200px;
   height: 200px;
-  border-radius: 50%;
   position: absolute;
   cursor: -webkit-grab;
   cursor: grab;
   opacity: 0.85;
+  -webkit-transform-origin: 97px 97px;
+          transform-origin: 97px 97px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -125,6 +126,28 @@ body {
           transform: translate(-50%, -50%);
   -webkit-animation: circle 2s infinite alternate;
           animation: circle 2s infinite alternate;
+}
+
+@-webkit-keyframes circleBg {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes circleBg {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 @-webkit-keyframes circle {

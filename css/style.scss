@@ -24,12 +24,15 @@ body {
   $widthHeight: 10%+random(40%);
   $left: 5% + random(80%);
   $top: 5% + random(70%);
+  $delay: random(10) / 10;
 
   .circle-bg {
     &:nth-child(#{$i}) {
       border-color: $circleColor;
       left: $left;
       top: $top;
+      // !太眼花撩亂，供參考繞圓圈寫法
+      // animation: circleBg 2s infinite linear #{$delay}s;
       // !此會使 js 跟 css 絕對位置不一
       // transform: translate(-$left, -$top);
     }
@@ -47,14 +50,16 @@ body {
   height: 200px;
   // border-style: dashed;
   // border-color: $blue;
-  border-radius: 50%;
+  // border-radius: 50%;
 
   position: absolute;
   // left: 20%;
   // top: 20%;
   cursor: grab;
   opacity: 0.85;
+  transform-origin: 97px 97px;
   transition: 0.2s;
+  // animation: circleBg 9s infinite linear;
 
   &:hover {
     opacity: 1;
@@ -68,12 +73,21 @@ body {
   max-height: 100%;
   // background: $blue;
   border-radius: 50%;
-
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   animation: circle 2s infinite alternate;
+}
+
+@keyframes circleBg {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes circle {
