@@ -30,7 +30,7 @@ body {
       border-color: $circleColor;
       left: $left;
       top: $top;
-      // ↓ 此會使 js 跟 css 絕對位置不一
+      // !此會使 js 跟 css 絕對位置不一
       // transform: translate(-$left, -$top);
     }
   }
