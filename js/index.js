@@ -18,9 +18,16 @@ circleBgs.forEach((item, idx) => {
       let percent = Math.abs(e.pageX - circleBgCenter)
       // console.log(e.pageX)
       // console.log(circleBgCenter)
+
+      // *超過 100 維持在 100
+      if (percent > 100) percent = 100
       console.log(percent)
+
       // *更改 circle 寬高 %
       circles[idx].setAttribute("style", `width:${percent}%; height:${percent}%;`)
+
+      // *test for text
+      // circles[idx].innerText = `${percent}%`
     }
 
     // *觸發滑鼠移動監聽 window mousemove
